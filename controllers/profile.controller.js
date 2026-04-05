@@ -19,7 +19,9 @@ const getProfile = (req, res) => {
             { "name": "Noah King", "email": "noah.king17@example.com", "phone": "9876543226", "address": "Ranchi, India" },
             { "name": "Isabella Wright", "email": "isabella.wright18@example.com", "phone": "9876543227", "address": "Chandigarh, India" },
             { "name": "Liam Scott", "email": "liam.scott19@example.com", "phone": "9876543228", "address": "Goa, India" },
-            { "name": "Charlotte Green", "email": "charlotte.green20@example.com", "phone": "9876543229", "address": "Shimla, India" }
+            { "name": "Charlotte Green", "email": "charlotte.green20@example.com", "phone": "9876543229", "address": "Shimla, India" },
+            { "name": "Sovan Ghorai", "email": "sovan.ghorai21@example.com", "phone": "9876543230", "address": "Shimla, India" }
+
             ];
   res.json(profileData);
 };

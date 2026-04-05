@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
+const dotenv = require("dotenv");
+dotenv.config();
 const profileRoutes = require("./routes/profile.route.js");
 app.use(express.json());
 app.use(cors({
@@ -11,7 +13,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api", profileRoutes);
-const PORT = 5000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
