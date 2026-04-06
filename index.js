@@ -11,6 +11,9 @@ app.use(cors({
 app.get("/", (req, res) => {
   res.send("Backend is running now 🚀");
 });
+app.get("/hello", (req, res) => {
+  res.send("Hello, Backend is running now 🚀");
+});
 
 app.use("/api", profileRoutes);
 const PORT = process.env.PORT || 8000;
