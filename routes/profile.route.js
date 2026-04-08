@@ -3,6 +3,6 @@ const router = express.Router();
 const { getProfile } = require("../controllers/profile.controller.js");
 router.get("/profile", getProfile);
 router.get("/profile-new", (req, res) => {
-  res.send("This is the new profile endpoint OKKKK 🚀");
+  res.send("This is the new profile endpoint is okk 🚀");
 });
 module.exports = router;
