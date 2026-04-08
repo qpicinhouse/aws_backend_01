@@ -12,9 +12,11 @@ app.get("/", (req, res) => {
   res.send("Backend is running now 🚀");
 });
 app.get("/api/hello", (req, res) => {
-  res.send("Hello, dev one🚀");
+  res.send("Hello, testing🚀");
 });
-
+app.get("/api/Hi", (req, res) => {
+  res.send("Hello, Hi testing🚀");
+});
 app.use("/api", profileRoutes);
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
