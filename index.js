@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.send("Backend is running now 🚀");
 });
 app.get("/api/hello", (req, res) => {
-  res.send("Hello, Backend is running now 🚀");
+  res.send("Hello, dev one🚀");
 });
 
 app.use("/api", profileRoutes);
