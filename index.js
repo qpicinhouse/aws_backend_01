@@ -14,7 +14,9 @@ app.get("/", (req, res) => {
 app.get("/api/hello", (req, res) => {
   res.send("Hello, testing🚀");
 });
-
+app.get("/api/Hi", (req, res) => {
+  res.send("Hello, Hi testing🚀");
+});
 app.use("/api", profileRoutes);
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
